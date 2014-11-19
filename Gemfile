@@ -42,3 +42,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'activeadmin', github: 'activeadmin'
 
 gem 'devise'
+
+#gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+
+gem 'kaminari'

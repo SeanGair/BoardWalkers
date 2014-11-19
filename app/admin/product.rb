@@ -4,7 +4,7 @@ ActiveAdmin.register Product do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-  permit_params :list, :of, :attributes, :on, :model, :name, :description, :price, :stock_quantity, :discount, :new, :demo, :released, :updated
+  permit_params :list, :of, :attributes, :on, :model, :name, :description, :price, :stock_quantity, :discount, :new, :demo, :released, :updated, :category_id
   #
   # or
   #

@@ -1,0 +1,15 @@
+<%= render 'home/header' %>
+
+<nav id="side_bar">
+	<li><a href="#">Coming Soon</a></li>
+	<li><a href="#">Boardgames</a></li>
+	<li><a href="#">Trading Cards</a></li>
+	<li><a href="#">Miniatures</a></li>
+	<li><a href="#">Role Playing</a></li>
+	<li><a href="#">Dice</a></li>
+</nav>
+
+<div id="content">
+	<%= image_tag("1500x200.png", class: "content_image") %>
+	<%= render partial: 'products', collection: @products %>
+</div>
