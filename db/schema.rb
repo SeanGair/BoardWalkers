@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141119223550) do
+ActiveRecord::Schema.define(version: 20141119233417) do
 
   create_table "about_us", force: true do |t|
     t.string   "title"
@@ -74,12 +74,8 @@ ActiveRecord::Schema.define(version: 20141119223550) do
 
   add_index "customers", ["province_id"], name: "index_customers_on_province_id"
 
-  create_table "order_items", force: true do |t|
-    t.integer  "quantity"
-    t.decimal  "price"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "order_items" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
   create_table "orders", force: true do |t|
     t.string   "status"
