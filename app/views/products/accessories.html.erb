@@ -1,0 +1,8 @@
+<%= render 'home/header' %>
+
+<%= render 'sidebar' %>
+
+<div id="content">
+	<%= image_tag("1500x200.png", class: "content_image") %>
+	<%= render partial: 'products', collection: @products %>
+</div>

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'tradingcards', to: 'products#tradingcards', as: 'tradingcards'
   get 'miniatures', to: 'products#miniatures', as: 'miniatures'
   get 'roleplaying', to: 'products#roleplaying', as: 'roleplaying'
+  get 'accessories', to: 'products#accessories', as: 'accessories'
   #get 'products', to: 'products#index', as: 'products'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
