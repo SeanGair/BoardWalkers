@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :products
 
   root to: 'home#index'
+  get 'aboutus', to: 'home#aboutus', as: 'aboutus'
   get 'boardgames', to: 'products#boardgames', as: 'boardgames'
   get 'tradingcards', to: 'products#tradingcards', as: 'tradingcards'
   get 'miniatures', to: 'products#miniatures', as: 'miniatures'

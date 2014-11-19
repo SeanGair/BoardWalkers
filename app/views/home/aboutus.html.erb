@@ -1,0 +1,9 @@
+<%= render 'header' %>
+
+<%= render 'products/sidebar' %>
+
+<div id="content">
+  <% @aboutus = AboutUs.first %>
+  <h2><%= @aboutus.title%></h2>
+  <p><%= @aboutus.body %></p>
+</div>
