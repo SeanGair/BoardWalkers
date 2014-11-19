@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   resources :products
 
   root to: 'home#index'
+  get 'boardgames', to: 'products#boardgames', as: 'boardgames'
+  get 'tradingcards', to: 'products#tradingcards', as: 'tradingcards'
+  get 'miniatures', to: 'products#miniatures', as: 'miniatures'
+  get 'roleplaying', to: 'products#roleplaying', as: 'roleplaying'
   #get 'products', to: 'products#index', as: 'products'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
