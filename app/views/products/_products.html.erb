@@ -1,6 +1,17 @@
 <div id="products">
 	<p><%= products.name %></p>
+	<% if products.image != "" then %>
+		<%= image_tag(products.image, class: "product_image") %>
+	<% else %>
+		<%= image_tag("No_picture_available.png", class: "product_image") %>
+	<% end %>
 	<p><%= products.description %></p>
 	<p>Price: <%= number_to_currency(products.price) %></p>
-	<p>Stock: <%= products.stock_quantity %></p>
+	<% if products.stock_quantity >= 5 then %>
+		<p id="instock">In Stock</p>
+	<% elsif products.stock_quantity <=5 && products.stock_quantity >0 then %>
+		<p id="lowstock">Low Stock</p>
+	<% else %>
+		<p id="outofstock">Out of Stock</p>
+	<% end %>
 </div>

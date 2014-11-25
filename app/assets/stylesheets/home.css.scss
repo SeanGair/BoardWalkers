@@ -86,3 +86,20 @@ nav li{
 		margin-left: 5px;
 	}
 }
+
+.product_image {
+	max-height: 200px;
+	max-width: 250px;
+}
+
+#instock{
+	color:green;
+}
+
+#lowstock{
+	color:yellow;
+}
+
+#outofstock{
+	color:red;
+}
