@@ -17,9 +17,9 @@
 		<li><a href="#">Game Demos</a></li>
 		<li><%= link_to 'About Us', aboutus_path %></li>
 		<li class="right">
-            <%= form_tag("/search", method: "get") do %>
-              <%= text_field_tag(:q) %>
-              <%= submit_tag("Search") %>
+            <%= form_tag search_results_path, method: :get do %>
+              <%= text_field_tag :search_keywords %>
+              <%= submit_tag 'Search' %>
             <% end %>
 		</li>
 	</ul>

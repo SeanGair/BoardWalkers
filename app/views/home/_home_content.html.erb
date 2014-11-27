@@ -2,6 +2,16 @@
 
 <div id="content">
 	<%= image_tag("1500x200.png", class: "content_image") %>
-
-	<h2>Featured Products<h2>
+    <div class="front">
+		<h2>Featured Products</h2>
+		<%= render partial: 'products/products', collection: @updated %>
+	</div>
+	<div class="front">
+		<h2>New Products</h2>
+		<%= render partial: 'products/products', collection: @new %>
+	</div>
+	<div class="front">
+		<h2>Coming Soon</h2>
+		<%= render partial: 'products/products', collection: @comingsoon %>
+	</div>
 </div>

@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'miniatures', to: 'products#miniatures', as: 'miniatures'
   get 'roleplaying', to: 'products#roleplaying', as: 'roleplaying'
   get 'accessories', to: 'products#accessories', as: 'accessories'
+  get 'search_results', to: 'products#search_results', as: 'search_results'
+
   #get 'products', to: 'products#index', as: 'products'
 
   devise_for :admin_users, ActiveAdmin::Devise.config

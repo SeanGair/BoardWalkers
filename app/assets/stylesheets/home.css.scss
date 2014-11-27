@@ -81,7 +81,7 @@ nav li{
 #products{
 	margin: 0 auto;
 	padding: 0 auto;
-	width: 48%;
+	width: 31.7%;
 	height: 400px;
 	float: left;
 	border: 1px solid black;
@@ -107,4 +107,14 @@ nav li{
 
 #outofstock{
 	color:red;
+}
+
+.front{
+	float: left;
+	width: 100%;
+}
+
+.search{
+	float:left;
+	width:100%;
 }
