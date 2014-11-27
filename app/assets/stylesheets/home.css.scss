@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html{
+  background-color: #E2DEB9;
+}
+
 nav{
 	border: 1px solid black;
 	padding-bottom: 5px;
@@ -9,13 +13,14 @@ nav{
 	padding-left: 5px;
 	width: 98%;
 	margin: 0 auto;
+	background-color: #A8341B;
 }
 
 nav li{
 	display: inline;
 	a{
 		text-decoration: none;
-		color: #bbb;
+		color: #302418;
 	}
 }
 .right{
