@@ -29,6 +29,6 @@ class ProductsController < ApplicationController
   def search_results
     wildcard_keywords = "%#{params[:search_keywords]}%"
     @search = Product.where('name LIKE ?', wildcard_keywords)
-    @category_search = Category.where('name LIKE ?', wildcard_keywords)
+    @category_search = Product.where('name LIKE ? AND category_id = ?', wildcard_keywords, params[:category_id])
   end
 end

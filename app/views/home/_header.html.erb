@@ -19,7 +19,8 @@
 		<li class="right">
             <%= form_tag search_results_path, method: :get do %>
               <%= text_field_tag :search_keywords %>
-              <%= select_tag(:category_id, options_for_select([['', 0], [options_from_collection_for_select(Category.all, :id, :name)]])) %>
+              
+              <%= select_tag(:category_id, options_for_select([['', 0], ['CCG', 1], ['Boardgames', 2], ['Table Top Accessories', 3], ['Miniatures', 4], ['Role Playing', 5]])) %>
               <%= submit_tag 'Search' %>
             <% end %>
 		</li>

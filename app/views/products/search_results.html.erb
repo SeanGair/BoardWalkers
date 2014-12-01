@@ -9,16 +9,11 @@
 		<% if @search.size.zero? %>
 	      <p>No products found.</p>
 		<% else %>
-		  <p><%= pluralize(@search.size, 'Product') %> Found. </p>
-		  <%= render partial: 'products', collection: @search %>
-		<% end %>
-	</div>
-	<div class="search">
-		<% if @category_search.size.zero? %>
-	      <p>No categories found.</p>
-		<% else %>
-	      <p><%= pluralize(@category_search.size, 'Category') %> Found. </p>
-		  <p>link to category</p>
+		    <p><%= pluralize(@search.size, 'Product') %> Found. </p>
+		    <%= render partial: 'products', collection: @search %>
+		    
+		    <p><%= pluralize(@category_search.size, 'Product') %> Found. </p>
+            <%= render partial: 'products', collection: @category_search %>
 		<% end %>
 	</div>
 </div>
