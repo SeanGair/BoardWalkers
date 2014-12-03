@@ -28,6 +28,7 @@ ActiveAdmin.register Product do
       f.input :category_id
       f.input :image
     end
+    f.actions
   end
 
 
