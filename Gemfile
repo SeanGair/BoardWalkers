@@ -47,3 +47,5 @@ gem 'devise'
 gem 'kaminari'
 
 gem 'rubocop'
+
+gem 'carrierwave'

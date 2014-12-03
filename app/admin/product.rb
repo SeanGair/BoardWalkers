@@ -14,5 +14,21 @@ ActiveAdmin.register Product do
   #   permitted
   # end
 
+  form :html => {:multipart => true} do |f|
+    f.inputs "Product Details" do
+      f.input :name
+      f.input :description
+      f.input :price
+      f.input :stock_quantity
+      f.input :discount
+      f.input :new
+      f.input :demo
+      f.input :released
+      f.input :updated
+      f.input :category_id
+      f.input :image
+    end
+  end
+
 
 end
